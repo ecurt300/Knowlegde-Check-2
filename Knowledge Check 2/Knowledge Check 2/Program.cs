@@ -9,8 +9,11 @@ for (int i = 0; i < numberOfRecords; i++)
     // In this loop, populate the object's properties using Console.ReadLine()
     var repository = new ChildObj();
 
-    Console.WriteLine("Enter the value for ");
-    repository.ID = i;
+    Console.WriteLine($"Enter the value for ID " + $" record {i}");
+    repository.ID = int.Parse(Console.ReadLine());
+
+    Console.WriteLine($"Enter the Data for {repository.ID} ");
+    repository.Data = (Console.ReadLine());
 
     recordList.Add(repository);
 }
